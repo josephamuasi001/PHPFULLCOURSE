@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="../src/edit.css">
 </head>
 <body>
-    <h1>Edit Student Details</h1>
+    <div class="container">
+        <div class="header">
+            <h1>Edit Student Details</h1>
+            <p>Lets correct the mistakes</p>
+        </div>
+        <button type="submit">Save</button>
+    </div>
 
     <?php 
     require '../config/database.php';
@@ -69,9 +75,6 @@
             <input type="date" name="date_of_birth" required value="<?= $student["date_of_birth"] ?>">
         </label>
         <br> <br>
-        <button type="submit">
-            Save
-        </button>
         <a href="index.php">
             Back
         </a>
