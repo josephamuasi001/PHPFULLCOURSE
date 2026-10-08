@@ -12,7 +12,7 @@
             <h1>Student Management System</h1>
             <p>Manage your student records</p>
         </div>
-        <a class="add" href="add-student.php">+ Add Student</a>
+        <a class="add" href="add-student.php">👨 Add Student</a>
     </div>
 
 
@@ -50,7 +50,7 @@
                     <td><?= $student["date_of_birth"] ?></td>    
                     <td><?= $student["enrollment_date"] ?></td>
                     <td>
-                        <a href="view.php?id=<?=$student["id"]?>">View</a>
+                        <a href="view.php?id=<?=$student["id"]?>">👀 View</a>
                     </td>
                 </tr>
                 <?php endforeach; ?>
