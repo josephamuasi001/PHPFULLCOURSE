@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edit Student Details</title>
+    <link rel="stylesheet" href="../src/edit.css">
 </head>
 <body>
     <h1>Edit Student Details</h1>
