@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>View Student</title>
+    <link rel="stylesheet" href="../src/view.css">
 </head>
 <body>
     <div class="header">
@@ -29,25 +30,34 @@
 
     $student = $stmt->fetch();
     ?>
-
-    <div class="view-card">
-        <h3>Name: </h3> 
-        <p id="name"><?= $student["first_name"];?>   <?= $student["last_name"] ?> </p>
-        <h3>Email: </h3> 
-        <p id="name"><?= $student["email"] ?></p>
-        <h3>Date of Birth: </h3> 
-        <p id="name"><?= $student["date_of_birth"] ?></p>
-        <h3>Enrollment Date:</h3> 
-        <p id="name"><?= $student["enrollment_date"] ?></p>
-    </div>
-
-    <div class="actions">
-        <a href="edit.php?id=<?= $student["id"] ?>"> Edit </a>
-        <form action="delete.php" method="POST" style="display: inline;">
-            <input type="hidden" name="id" value="<?= $student["id"] ?>">
-            <button type="submit">Delete</button>
-        </form>
-        <a href="index.php"> Back</a>
+    <div class="container">
+        <div class="view-card">
+            <div class="details">
+                <h3>Name: </h3> 
+                <p id="name"><?= $student["first_name"];?>   <?= $student["last_name"] ?> </p>
+            </div>
+            <div class="details">
+                <h3>Email: </h3> 
+                <p id="name"><?= $student["email"] ?></p>
+            </div>
+            <div class="details">
+                <h3>Date of Birth: </h3> 
+                <p id="name"><?= $student["date_of_birth"] ?></p>
+            </div>
+            <div class="details">
+                <h3>Enrollment Date:</h3> 
+                <p id="name"><?= $student["enrollment_date"] ?></p>
+            </div>
+        </div>
+    
+        <div class="actions">
+            <a href="edit.php?id=<?= $student["id"] ?>" id="edit"> Edit </a>
+            <form action="delete.php" method="POST" style="display: inline;">
+                <input type="hidden" name="id" value="<?= $student["id"] ?>">
+                <button id="delete" type="submit">Delete</button>
+            </form>
+            <a href="index.php" id="back"> Back</a>
+        </div>
     </div>
 
 </body>
