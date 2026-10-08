@@ -31,6 +31,7 @@
         <br> <br>
         <button type="submit">Add Student</button>
     </form>
+    <a href="index.php">Back</a>
 
     <?php 
         require '../config/database.php';
