@@ -51,12 +51,12 @@
         </div>
     
         <div class="actions">
-            <a href="edit.php?id=<?= $student["id"] ?>" id="edit"> Edit </a>
+            <a href="edit.php?id=<?= $student["id"] ?>" id="edit">✏️ Edit</a>
             <form action="delete.php" method="POST" style="display: inline;">
                 <input type="hidden" name="id" value="<?= $student["id"] ?>">
-                <button id="delete" type="submit">Delete</button>
+                <button id="delete" type="submit">🗑️ Delete</button>
             </form>
-            <a href="index.php" id="back"> Back</a>
+            <a href="index.php" id="back">↩️ Back</a>
         </div>
     </div>
 
