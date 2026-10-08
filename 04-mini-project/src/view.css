@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: aliceblue;
+}
+
+.header {
+    margin: 60px 80px;  
+    text-align: center; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+
+.view-card {
+    border: 0px solid rgb(0, 0, 0);
+    padding: 110px 100px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px;
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+h1 {
+    color: rgb(30, 34, 33);
+}
+
+h3
+
+.header p{
+    color: black;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+#edit {
+    background-color: forestgreen;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    
+}
+
+#edit:hover {
+    background-color: white;
+    color: forestgreen;
+    border: 0.2px solid forestgreen;
+}
+
+
+#delete {
+    background-color: red;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#delete:hover {
+    background-color: white;
+    color: red;
+    border: 0.2px solid red;
+    transform: translate(4px, -4px);
+}
+
+#back {
+    background-color: blue;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: none;
+}
